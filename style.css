@@ -32,7 +32,6 @@ body {
   justify-content: space-between;
   height: 72px;
   width: 100%;
-  box-shadow: 1px 2px 5px;
 }
 
 .welcome {
@@ -294,6 +293,17 @@ li {
   letter-spacing: 0.03em;
 }
 
+.btn-resume:hover {
+  background: #36f37f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.btn-resume:active {
+  background: #008552;
+  border-radius: 4px;
+}
+
 /* *****************About******************* */
 .about-cards {
   display: flex;
@@ -360,6 +370,11 @@ li {
   align-items: center;
   width: 100%;
   gap: 20px;
+  background-image: url(assets/images/illustration-contact-form.png);
+  background-size: 20%;
+  background-position-y: 740px;
+  background-position-x: 280px;
+  background-repeat: no-repeat;
 }
 
 .fields {
@@ -451,202 +466,3 @@ button {
   border: none;
 }
 
-/* *****************************Media Queries*************************** */
-@media only screen and (min-width: 600px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .homepage {
-    /* background: #000; */
-    width: 1920px;
-    width: 100%;
-    height: 1300px;
-    background-image: url(assets/images/background.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: -30px;
-  }
-
-  .nav-b {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 72px;
-  }
-
-  .nav-b-list {
-    padding: 0;
-    display: flex;
-    height: 72px;
-    gap: 25%;
-    white-space: nowrap;
-    align-items: center;
-    justify-content: center;
-    font-size: 5px;
-  }
-
-  li {
-    background-color: none;
-    font-weight: 600;
-    font-size: 15px;
-    text-decoration: none;
-  }
-
-  li:hover {
-    background: rgb(107, 125, 206);
-    color: #fff;
-    transition: all 0.8s ease-in;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .nvl:hover,
-  .nvl:focus {
-    color: #fff;
-  }
-
-  .intro-text {
-    margin-top: 150px;
-    font-weight: 800;
-    font-size: 3rem;
-    line-height: 60px;
-  }
-
-  .intro-note,
-  .about-support-text {
-    font-weight: 400;
-    font-size: 100%;
-    font-size: 1.25rem;
-    line-height: 32px;
-  }
-
-  a {
-    background-color: none;
-    text-decoration: none;
-  }
-
-  .soc-media {
-    gap: 1.2rem;
-    margin-top: 30px;
-  }
-
-  .action {
-    margin-top: 30px;
-  }
-
-  .nbl {
-    background-color: white;
-  }
-
-  .card-container {
-    align-self: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
-    gap: 10px 0;
-    padding: 0;
-    justify-items: center;
-    align-items: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
-  }
-
-  .card-1:hover {
-    transform: scale(1.05);
-    transition: 1.1s ease-out;
-  }
-
-  h2 {
-    width: 80%;
-  }
-
-  .about-me {
-    align-items: center;
-    justify-items: center;
-  }
-
-  .about-cards {
-    align-self: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
-    gap: 25px 0;
-    margin: 50px auto;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .form {
-    padding-top: 200px;
-    margin: 0 auto;
-    margin-top: 90px;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .form-text {
-    width: 35%;
-    height: 300px;
-    font-size: 30px;
-    font-weight: 700;
-  }
-
-  .fields {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    height: 300px;
-    padding: 0;
-    margin-left: 0;
-    padding-left: 0;
-    left: 0;
-    gap: 24px;
-  }
-
-  .full-name,
-  .email,
-  .text-area {
-    width: 98%;
-  }
-
-  #git {
-    align-self: start;
-    padding-left: 8px;
-  }
-
-  .move-up {
-    height: 45px;
-    width: 45px;
-    border-radius: 50px;
-    margin-left: 1200px;
-    margin-top: -25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(assets/images/arrow-up.png);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    padding: 0;
-  }
-
-  .nav-b {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    background: #fff;
-  }
-}
