@@ -432,6 +432,25 @@ li {
   margin-top: 90px;
 }
 
+.move-up {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  margin-left: 170px;
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/images/arrow-up.png);
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+
+
 /* *****************************Media Queries*************************** */
 
 
@@ -594,6 +613,18 @@ li {
   #git {
     align-self: start;
     padding-left: 8px;
+  }
+
+  .move-up {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    margin-left: 1200px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/images/arrow-up.png);
   }
 }
 
