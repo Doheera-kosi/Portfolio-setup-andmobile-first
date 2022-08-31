@@ -27,6 +27,7 @@ body {
 .nav {
   background: #fff;
   display: flex;
+
   /* padding: 9px; */
   justify-content: space-between;
   height: 72px;
@@ -45,6 +46,7 @@ a {
   color: #344563;
   text-decoration: none;
 }
+
 .menu {
   margin-top: 12px;
   padding: 10px;
@@ -243,12 +245,12 @@ li {
   margin: 10px 0;
   margin-top: 10px;
   white-space: nowrap;
-  border: none;
+  border: 0;
 }
 
 .see-project:hover {
   background: #36cd3f;
-  box-shadow: 0px 10px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 10px 16px rgba(54, 179, 127, 0.24);
 }
 
 .btn {
@@ -449,12 +451,7 @@ button {
   border: none;
 }
 
-
-
 /* *****************************Media Queries*************************** */
-
-
-
 @media only screen and (min-width: 600px) {
   body {
     display: flex;
@@ -473,7 +470,6 @@ button {
     background-size: 100%;
     background-position-y: -30px;
   }
-
 
   .nav-b {
     display: flex;
@@ -494,17 +490,17 @@ button {
     font-size: 5px;
   }
 
-  li:hover {
-    background: rgb(107, 125, 206);
-    color: #fff;
-    transition: all 0.8s ease-in;
-  }
-
   li {
     background-color: none;
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
+  }
+
+  li:hover {
+    background: rgb(107, 125, 206);
+    color: #fff;
+    transition: all 0.8s ease-in;
   }
 
   .nav {
