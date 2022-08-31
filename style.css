@@ -371,8 +371,8 @@ li {
   width: 100%;
   gap: 20px;
   background-image: url(assets/images/illustration-contact-form.png);
-  background-size: 20%;
-  background-position-y: 740px;
+  background-size: 30%;
+  background-position-y: 640px;
   background-position-x: 280px;
   background-repeat: no-repeat;
 }
