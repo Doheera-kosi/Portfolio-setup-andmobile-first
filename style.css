@@ -494,6 +494,12 @@ button {
     font-size: 5px;
   }
 
+  li:hover {
+    background: rgb(107, 125, 206);
+    color: #fff;
+    transition: all 0.8s ease-in;
+  }
+
   li {
     background-color: none;
     font-weight: 600;
@@ -503,6 +509,11 @@ button {
 
   .nav {
     display: none;
+  }
+
+  .nvl:hover,
+  .nvl:focus {
+    color: #fff;
   }
 
   .intro-text {
