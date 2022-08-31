@@ -15,7 +15,7 @@ body {
 .homepage {
   background: url(./assets/images/header-illsutration-mobile.png);
   background-size: 100%;
-  background-position-y: -10px;
+  background-position-y: 80px;
   background-repeat: no-repeat;
 }
 
@@ -25,11 +25,13 @@ body {
 }
 
 .nav {
+  background: #fff;
   display: flex;
-  padding: 9px;
+  /* padding: 9px; */
   justify-content: space-between;
   height: 72px;
   width: 100%;
+  box-shadow: 1px 2px 5px;
 }
 
 .welcome {
@@ -39,6 +41,10 @@ body {
   font-weight: 600;
 }
 
+a {
+  color: #344563;
+  text-decoration: none;
+}
 .menu {
   margin-top: 12px;
   padding: 10px;
@@ -199,7 +205,7 @@ h2 {
   justify-content: center;
   width: 100%;
   list-style-type: none;
-  gap: 10px;
+  gap: 1rem;
 }
 
 li {
@@ -211,7 +217,7 @@ li {
   height: 30px;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.8rem;
   color: #3a4a42;
   text-decoration: none;
 }
@@ -238,6 +244,11 @@ li {
   margin-top: 10px;
   white-space: nowrap;
   border: none;
+}
+
+.see-project:hover {
+  background: #36cd3f;
+  box-shadow: 0px 10px 16px rgba(54, 179, 127, 0.24);
 }
 
 .btn {
@@ -325,7 +336,7 @@ li {
   display: flex;
   padding: 0;
   width: 100%;
-  gap: 6px;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
 }
@@ -374,8 +385,6 @@ li {
   display: none;
 }
 
-.first-name,
-.last-name,
 .full-name,
 .email,
 .text-area {
@@ -425,18 +434,7 @@ li {
 
 /* *****************************Media Queries*************************** */
 
-@media only screen and (min-width: 768px) {
-  .body {
-    background: rgb(33, 151, 106);
-  }
 
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 80%;
-    gap: 10px 0;
-  }
-}
 
 @media only screen and (min-width: 600px) {
   body {
@@ -447,10 +445,16 @@ li {
   }
 
   .homepage {
+    /* background: #000; */
     width: 1920px;
-    width: 80%;
-    margin-top: 150px;
+    width: 100%;
+    height: 1300px;
+    background-image: url(assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -30px;
   }
+
 
   .nav-b {
     display: flex;
@@ -483,6 +487,7 @@ li {
   }
 
   .intro-text {
+    margin-top: 150px;
     font-weight: 800;
     font-size: 3rem;
     line-height: 60px;
@@ -501,18 +506,18 @@ li {
     text-decoration: none;
   }
 
+  .soc-media {
+    gap: 1.2rem;
+    margin-top: 30px;
+  }
+
+  .action {
+    margin-top: 30px;
+  }
+
   .nbl {
     background-color: white;
   }
-
-  /* .card-container {
-    background: #000;
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1f));
-    justify-content: center;
-  } */
 
   .card-container {
     align-self: center;
@@ -525,6 +530,11 @@ li {
     align-items: center;
     margin-top: 200px;
     margin-bottom: 200px;
+  }
+
+  .card-1:hover {
+    transform: scale(1.05);
+    transition: 1.1s ease-out;
   }
 
   h2 {
@@ -557,9 +567,10 @@ li {
   }
 
   .form-text {
-    width: 45%;
+    width: 35%;
     height: 300px;
     font-size: 30px;
+    font-weight: 700;
   }
 
   .fields {

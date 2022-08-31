@@ -1,10 +1,48 @@
-## Copyright 2021, [YOUR NAME]
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-###### Please delete this line and the next one
-###### APP TYPE can be a webpage/website, a web app, a software and so on
+**Profile Moblie Verison**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this [APP TYPE] and associated documentation files, to deal in the [APP TYPE] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [APP TYPE], and to permit persons to whom the [APP TYPE] is furnished to do so, subject to the following conditions:
+### Description of the project.  
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [APP TYPE].
+**Portifolio project for mobile view**
 
-THE [APP TYPE] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [APP TYPE] OR THE USE OR OTHER DEALINGS IN THE [APP TYPE].
+
+## Built With
+
+- html and css
+
+## Getting Started
+
+**please get your browser update. To get a local copy up and running follow these simple steps.**
+
+Run the command below from the terminal
+
+- cd portfolio-setup-andmobile-first
+- start index.html
+
+
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/Doheera-kosi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/evans-kupour-1879421a3/)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks for Microverse for providing the linter config files
+
+## 📝 License
+
+This project is [licensed](https://github.com/Doheera-kosi/Hello-Microverse/blob/feature/MIT.md).
