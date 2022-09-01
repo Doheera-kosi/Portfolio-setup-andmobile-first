@@ -262,6 +262,21 @@ li {
   letter-spacing: 0.03em;
 }
 
+/*
+.btn-resume {
+  background: #36b37f;
+  padding: 12px;
+  border-radius: 0.4rem;
+  font-size: 17px;
+  font-size: 100%;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border: none;
+  letter-spacing: 0.03em;
+} */
+
 .see-project:hover,
 .btn-resume:hover {
   background: #36b37f;
@@ -309,20 +324,6 @@ li {
   flex-direction: column;
   height: 62px;
   align-items: center;
-}
-
-.btn-resume {
-  background: #36b37f;
-  padding: 12px;
-  border-radius: 0.4rem;
-  font-size: 17px;
-  font-size: 100%;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  border: none;
-  letter-spacing: 0.03em;
 }
 
 .btn-resume:hover {
@@ -404,8 +405,6 @@ li {
   gap: 20px;
   background-image: url(assets/images/illustration-contact-form.png);
   background-size: 30%;
-  background-position-y: 640px;
-  background-position-x: 280px;
   background-repeat: no-repeat;
   background-position-y: 730px;
   background-position-x: 317px;
@@ -511,22 +510,13 @@ button {
   }
 
   .nav-b {
+    /* background: #000; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 72px;
-  }
-
-  .nav-b-list {
-    padding: 0;
-    display: flex;
-    height: 72px;
-    gap: 15%;
-    white-space: nowrap;
-    align-items: center;
-    justify-content: center;
-    font-size: 5px;
+    gap: 3%;
   }
 
   .nvl {
@@ -717,4 +707,3 @@ button {
     background: #fff;
   }
 }
-
