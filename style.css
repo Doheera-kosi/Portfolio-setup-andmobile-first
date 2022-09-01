@@ -311,6 +311,31 @@ li {
   align-items: center;
 }
 
+.btn-resume {
+  background: #36b37f;
+  padding: 12px;
+  border-radius: 0.4rem;
+  font-size: 17px;
+  font-size: 100%;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border: none;
+  letter-spacing: 0.03em;
+}
+
+.btn-resume:hover {
+  background: #36f37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.btn-resume:active {
+  background: #008552;
+  border-radius: 4px;
+}
+
 /* *****************About******************* */
 .about-cards {
   display: flex;
@@ -378,6 +403,9 @@ li {
   width: 100%;
   gap: 20px;
   background-image: url(assets/images/illustration-contact-form.png);
+  background-size: 30%;
+  background-position-y: 640px;
+  background-position-x: 280px;
   background-repeat: no-repeat;
   background-position-y: 730px;
   background-position-x: 317px;
@@ -689,3 +717,4 @@ button {
     background: #fff;
   }
 }
+
