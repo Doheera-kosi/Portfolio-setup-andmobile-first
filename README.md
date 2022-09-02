@@ -1,7 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
-Profile Moblie Verison
+Portfolio Desktop Verison
+
 
 > Description the project.
 
@@ -17,7 +18,7 @@ Profile Moblie Verison
 Run the command below from the terminal
 
 - git clone in your terminal
-- cd hello-micriverse
+- Portfolio-setup-andmobile-first
 - start index.html
 
 
@@ -41,7 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks for Microverse for providing the linter config files
+- Thanks to Microverse for providing the linter config files
 
 ## 📝 License
 

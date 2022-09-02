@@ -9,7 +9,8 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  transition: all 0.01ms ease-in-out;
+
+  /* transition: all 50s linear; */
 }
 
 .homepage {
@@ -150,7 +151,7 @@ p {
   border-radius: 5px;
 }
 
-/* ------------------- Card-Container ------------------- */
+/* ------- Card-Container ------- */
 .card-container {
   display: flex;
   flex-direction: column;
@@ -247,9 +248,46 @@ li {
   border: 0;
 }
 
-.see-project:hover {
-  background: #36cd3f;
-  box-shadow: 0 10px 16px rgba(54, 179, 127, 0.24);
+.btn-resume {
+  background: #36b37f;
+  padding: 12px;
+  border-radius: 0.4rem;
+  font-size: 17px;
+  font-size: 100%;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border: none;
+  letter-spacing: 0.03em;
+}
+
+/*
+.btn-resume {
+  background: #36b37f;
+  padding: 12px;
+  border-radius: 0.4rem;
+  font-size: 17px;
+  font-size: 100%;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border: none;
+  letter-spacing: 0.03em;
+} */
+
+.see-project:hover,
+.btn-resume:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.see-project:active,
+.btn-resume:active {
+  background: #008552;
+  border-radius: 4px;
 }
 
 .btn {
@@ -265,6 +303,15 @@ li {
   height: 50%;
   background-image: url(./assets/images/frame-left.png);
   background-repeat: no-repeat;
+  background-position-y: 260px;
+
+  /* background-position-x: 20px; */
+}
+
+.recent-text:hover,
+.about-primary-text:hover {
+  color: #ff6b00;
+  animation-duration: 3s;
 }
 
 .about-support-text {
@@ -277,20 +324,6 @@ li {
   flex-direction: column;
   height: 62px;
   align-items: center;
-}
-
-.btn-resume {
-  background: #36b37f;
-  padding: 12px;
-  border-radius: 0.4rem;
-  font-size: 17px;
-  font-size: 100%;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  border: none;
-  letter-spacing: 0.03em;
 }
 
 .btn-resume:hover {
@@ -363,7 +396,7 @@ li {
   color: #36b37e;
 }
 
-/* *******************Form********************** */
+/* **********Form*********** */
 .form {
   display: flex;
   flex-direction: column;
@@ -372,9 +405,17 @@ li {
   gap: 20px;
   background-image: url(assets/images/illustration-contact-form.png);
   background-size: 30%;
-  background-position-y: 640px;
-  background-position-x: 280px;
   background-repeat: no-repeat;
+  background-position-y: 730px;
+  background-position-x: 317px;
+}
+
+.form:hover {
+  background: rgb(235, 233, 233);
+
+  /* width: 90%; */
+  transition: all 3s linear;
+  border-bottom: 0;
 }
 
 .fields {
@@ -440,28 +481,233 @@ li {
   font-size: 20px;
   line-height: 24px;
   color: #42526e;
-}
-
-.indicator-1 {
-  background: #000;
-  width: 40%;
-  height: 4px;
-  margin-top: 90px;
-}
-
-.move-up {
-  height: 45px;
-  width: 45px;
-  border-radius: 50px;
-  margin-left: 170px;
-  margin-top: -25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(assets/images/arrow-up.png);
+  padding-bottom: 5%;
 }
 
 button {
   background: none;
   border: none;
+}
+
+/* *****************************Media Queries*************************** */
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homepage {
+    /* background: #000; */
+    width: 1920px;
+    width: 100%;
+    height: 1100px;
+    background-image: url(assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -30px;
+  }
+
+  .nav-b {
+    /* background: #000; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    gap: 3%;
+  }
+
+  .nvl {
+    /* background: #000; */
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+
+  .nvl:hover {
+    color: #ff6b00;
+    transform: scale(01.1);
+    transition: all 0.8s linear;
+  }
+
+  li {
+    background-color: none;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .intro-text {
+    margin-top: 150px;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  .intro-note,
+  .about-support-text {
+    font-weight: 400;
+    font-size: 100%;
+    font-size: 1.25rem;
+    line-height: 32px;
+  }
+
+  .intro-note:hover,
+  .about-support-text:hover {
+    color: #ff6b00;
+    font-size: 1.3rem;
+    transform: scale(1.1);
+    transition: all 0.8s;
+  }
+
+  a {
+    background-color: none;
+    text-decoration: none;
+  }
+
+  .soc-media {
+    gap: 1.2rem;
+    margin-top: 30px;
+  }
+
+  .action {
+    margin-top: 30px;
+  }
+
+  .card-container {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    gap: 10px 0;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+  }
+
+  .card-1:hover {
+    transform: scale(1.05);
+    transition: 3.1s ease-out;
+  }
+
+  h2 {
+    width: 80%;
+  }
+
+  .about-me {
+    align-items: center;
+    justify-items: center;
+  }
+
+  .about-cards {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    gap: 25px 0;
+    margin: 50px auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .btn-resume:hover {
+    background: orange;
+  }
+
+  .card-a:hover {
+    transform: scale(1.05);
+    transition: all 1.5s linear;
+  }
+
+  .ellipse:hover {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: 1s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .form {
+    padding-top: 200px;
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-text {
+    width: 35%;
+    height: 300px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 300px;
+    padding: 0;
+    margin-left: 0;
+    padding-left: 0;
+    left: 0;
+    gap: 24px;
+  }
+
+  .full-name,
+  .email,
+  .text-area {
+    width: 98%;
+  }
+
+  #git {
+    align-self: start;
+    padding-left: 8px;
+  }
+
+  .move-up {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    margin-left: 1200px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/images/arrow-up.png);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .nav-b {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: #fff;
+  }
 }
