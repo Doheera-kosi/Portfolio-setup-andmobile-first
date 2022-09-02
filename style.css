@@ -618,6 +618,10 @@ button {
     align-items: center;
   }
 
+  .btn-resume:hover {
+    background: orange;
+  }
+
   .card-a:hover {
     transform: scale(1.05);
     transition: all 1.5s linear;
