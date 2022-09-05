@@ -33,7 +33,7 @@ body {
 
 .welcome {
   margin-left: 15px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
 }
@@ -57,7 +57,7 @@ h1 {
   font-family: 'Inter', sans-serif;
   line-height: 52px;
   font-weight: 700;
-  font-size: 11.2vw;
+  font-size: 255%;
   text-align: center;
   padding: 8px;
   font-style: normal;
@@ -69,11 +69,10 @@ span {
 }
 
 p {
-  /* background: #000; */
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
-  font-size: 5.8vw;
+  font-size: 20px;
   text-align: center;
   color: #42526e;
   padding: 8px;
@@ -88,6 +87,7 @@ p {
   line-height: 28px;
   flex-direction: column;
   text-align: center;
+  font-size: 6vw;
 }
 
 .soc-media,
@@ -122,8 +122,6 @@ p {
 
 /* Recent Work */
 .recent-work {
-  background: #000;
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -131,8 +129,6 @@ p {
 }
 
 .recent-text {
-  width: 90vw;
-  margin: auto;
   display: flex;
   justify-content: center;
   padding: 0 20px;
@@ -145,7 +141,7 @@ p {
   height: 4px;
   width: 45px;
   align-self: center;
-  margin: 4vh;
+  margin-bottom: 40px;
   border-radius: 5px;
 }
 
@@ -180,15 +176,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
-  width: 90%;
+  width: 100%;
   height: 222px;
 }
 
 h2 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   font-size: 150%;
   font-family: 'Inter', sans-serif;
   text-align: center;
