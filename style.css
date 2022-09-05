@@ -660,9 +660,10 @@ button {
   }
 
   .form-text {
+    /* background: #000; */
     width: 35%;
     height: 300px;
-    font-size: 30px;
+    font-size: 1.599vw;
     font-weight: 700;
   }
 
