@@ -593,6 +593,7 @@ button {
     display: flex;
     height: 100%;
   }
+
   .card-1:hover {
     transform: scale(1.05);
     transition: 3.1s ease-out;
@@ -624,6 +625,7 @@ button {
     padding: 10px;
     margin-top: 25px;
   }
+  
   .btn-resume:hover {
     background: orange;
   }
