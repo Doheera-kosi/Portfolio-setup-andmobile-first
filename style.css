@@ -33,7 +33,7 @@ body {
 
 .welcome {
   margin-left: 15px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
 }
@@ -57,7 +57,7 @@ h1 {
   font-family: 'Inter', sans-serif;
   line-height: 52px;
   font-weight: 700;
-  font-size: 255%;
+  font-size: 11.2vw;
   text-align: center;
   padding: 8px;
   font-style: normal;
@@ -69,10 +69,11 @@ span {
 }
 
 p {
+  /* background: #000; */
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 5.8vw;
   text-align: center;
   color: #42526e;
   padding: 8px;
@@ -121,6 +122,8 @@ p {
 
 /* Recent Work */
 .recent-work {
+  background: #000;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -128,6 +131,8 @@ p {
 }
 
 .recent-text {
+  width: 90vw;
+  margin: auto;
   display: flex;
   justify-content: center;
   padding: 0 20px;
@@ -140,7 +145,7 @@ p {
   height: 4px;
   width: 45px;
   align-self: center;
-  margin-bottom: 40px;
+  margin: 4vh;
   border-radius: 5px;
 }
 
@@ -175,7 +180,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  margin: auto;
+  width: 90%;
   height: 222px;
 }
 
