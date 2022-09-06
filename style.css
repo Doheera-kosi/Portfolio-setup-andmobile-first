@@ -576,6 +576,11 @@ button {
     margin-top: 30px;
   }
 
+  .recent-text,
+  .about-primary-text {
+    margin: auto;
+  }
+
   .card-container {
     align-self: center;
     display: grid;
