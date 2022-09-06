@@ -280,7 +280,7 @@ li {
   height: 50%;
   background-image: url(./assets/images/frame-left.png);
   background-repeat: no-repeat;
-  background-position-y: 260px;
+  background-position-y: 300px;
 }
 
 .recent-text:hover,
