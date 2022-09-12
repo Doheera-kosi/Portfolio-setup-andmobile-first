@@ -31,6 +31,12 @@ body {
   width: 100%;
 }
 
+/* here starts */
+
+
+
+/* here end */
+
 .welcome {
   margin-left: 15px;
   font-size: 1.2em;
@@ -50,6 +56,55 @@ a {
   width: 55px;
 }
 
+/* *********************************** */
+
+
+
+div.nav-b {
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  gap: 80px;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 2rem;
+  /* justify-content: center; */
+  background: rgb(216, 204, 204);
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.hidden-content.menu {
+  display: flex;
+  padding-top: 80px;
+}
+
+
+/* .hamburger {
+  margin-top: 12px;
+  padding: 10px;
+  
+  padding-right: 60px;
+  top: 3.5em;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  width: 2em;
+  height: 3px;
+  border-radius: 13px;
+  background-color: #111110;
+  margin-top: 6px;
+  transition: all 0.3s ease-in-out;
+} */
+
+/* ******************************************** */
 h1 {
   display: flex;
   flex-direction: column;
@@ -490,6 +545,27 @@ button {
     height: 72px;
     gap: 3%;
   }
+
+  #humburger-menu, .nav-b {
+    display: flex;
+    flex-direction: row;
+    height: 0;
+    background: none;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.nav-b {
+    width: 100vw;
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 25px;
+  }
+
 
   .nvl {
     font-size: 1.3rem;
