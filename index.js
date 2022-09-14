@@ -1,24 +1,13 @@
 /* eslint-disable linebreak-style */
-const revealMenu = document.querySelector('.menu');
-const hideMenu = document.querySelector('.hidden-content');
+const revealMenu = document.querySelector('.hamburger-menu');
+const hideMenu = document.querySelector('.nav-items'); // .hidden-content
 
-function showMenu() {
-  if (hideMenu.classList.contains('menu')) {
-    hideMenu.classList.remove('menu');
-  } else {
-    hideMenu.classList.add('menu');
-  }
-}
+revealMenu.addEventListener('click', () => {
+  revealMenu.classList.toggle('active');
+  hideMenu.classList.toggle('active');
+});
 
-revealMenu.addEventListener('click', showMenu);
-
-// const menuItem = document.querySelector('.nav-c');
-// const closeMobileItems = document.querySelectorAll('.closeMenu');
-// const displayMobileMenu = () => {
-//   menuItem.style.display = 'block';
-// };
-// const closeMobileMenu = () => {
-//   menuItem.style.display = 'none';
-// };
-// document.querySelector('.menu').addEventListener('click', displayMobileMenu);
-// closeMobileItems.forEach(((element) => element.addEventListener('click', closeMobileMenu)));
+document.querySelectorAll('.li-1').forEach((n) => n.addEventListener('click', () => {
+  revealMenu.classList.remove('active');
+  hideMenu.classList.remove('active');
+}));
