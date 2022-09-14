@@ -32,7 +32,6 @@ body {
 }
 
 .nav-items {
-  background: #000;
   position: fixed;
   left: -100%;
   top: -40px;
