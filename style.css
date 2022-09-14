@@ -32,9 +32,10 @@ body {
 }
 
 .nav-items {
+  background: #000;
   position: fixed;
   left: -100%;
-  top: -45px;
+  top: -40px;
   padding-top: 40px;
   flex-direction: column;
   width: 100%;
@@ -42,8 +43,8 @@ body {
   text-align: left;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  transition: 0.9s;
-  background: radial-gradient(circle at top right, transparent 4vw, white 30.1vw);
+  transition: 0.5s;
+  background: radial-gradient(circle at top right, transparent 4vw, rgb(250, 249, 249) 25.1vw);
 }
 
 .ul-desktop {
