@@ -105,13 +105,13 @@ div.nav-b {
 .hamburger-menu.active .bar:nth-child(1) {
   transform: translateY(3.3px) rotate(45deg);
   background-color: black;
-  transition: 1.5s;
+  transition: 1.4s;
 }
 
 .hamburger-menu.active .bar:nth-child(3) {
   transform: translateY(-3.3px) rotate(-45deg);
   background-color: black;
-  transition: 1.5s;
+  transition: 1.4s;
 }
 
 h1 {
