@@ -12,7 +12,7 @@ body {
 }
 
 .homepage {
-  background: url(./assets/images/header-illsutration-mobile.png);
+  background: url(/assets/images/header-illsutration-mobile.png);
   background-size: 100%;
   background-position-y: 80px;
   background-repeat: no-repeat;
@@ -374,6 +374,76 @@ h2 {
   border-radius: 4px;
 }
 
+#popup-window {
+  width: 100%;
+  height: 100%;
+  background: rgba(54, 179, 127, 0.24);
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(10px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 90%;
+  background: white;
+  justify-content: left;
+  border-radius: 10px;
+  overflow-y: scroll;
+  padding: 15px;
+}
+
+#close-popup-btn {
+  width: 40px;
+  align-self: flex-end;
+  margin-right: 6px;
+  font-size: 6vw;
+  color: rgb(75, 49, 49);
+}
+
+.pop-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.desc,
+.title {
+  padding: 0;
+  text-align: left;
+}
+
+.tag {
+  display: flex;
+  padding: 0;
+  align-content: start;
+  justify-content: start;
+}
+
+.see-live,
+.see-source {
+  display: flex;
+  align-items: center;
+  background: #36b37f;
+  padding: 12px;
+  border-radius: 0.4rem;
+  font-size: 4vw;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border: none;
+  letter-spacing: 0.03em;
+  width: 45%;
+}
+
 /* *****************About******************* */
 .about-cards {
   display: flex;
@@ -540,7 +610,7 @@ button {
     width: 1920px;
     width: 100%;
     height: 1100px;
-    background-image: url(assets/images/background.png);
+    background-image: url(/assets/images/background.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: -30px;
