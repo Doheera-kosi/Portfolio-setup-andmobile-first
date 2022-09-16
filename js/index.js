@@ -1,23 +1,17 @@
-/* eslint-disable linebreak-style */
-// import data from './proeject-data.js';
-/* eslint-disable linebreak-style */
 const revealMenu = document.querySelector('.hamburger-menu');
 const hideMenu = document.querySelector('.nav-items'); // .hidden-content
 const projectContainer = document.getElementById('card-container');
 const overLay = document.querySelector('#popup-window');
 const popUpContainer = document.querySelector('.popup');
 const btnContainer = document.querySelectorAll('.see-project');
-
 revealMenu.addEventListener('click', () => {
   revealMenu.classList.toggle('active');
   hideMenu.classList.toggle('active');
 });
-
 document.querySelectorAll('.li-1').forEach((n) => n.addEventListener('click', () => {
   revealMenu.classList.remove('active');
   hideMenu.classList.remove('active');
 }));
-
 const data = [
   {
     id: '1',
@@ -25,15 +19,19 @@ const data = [
     src: 'assets/images/popup-pic.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     lang: ['Ruby on Rails', 'css', 'JavaScript'],
+    githubIcon: './assets/images/gitHubIcon.png', // here
+    liveIcon: './assets/images/liveIcon.svg', // here
     live: '#',
     source: '#',
   },
   {
     id: '2',
     title: 'Tonic',
-    src: 'assets/images/wheat.png',
+    src: 'assets/images/snapshop-desktop.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     lang: ['Ruby on Rails', 'css', 'JavaScript'],
+    githubIcon: './assets/images/gitHubIcon.png', // here
+    liveIcon: './assets/images/liveIcon.svg', // here
     live: '#',
     source: '#',
   },
@@ -43,6 +41,8 @@ const data = [
     src: 'assets/images/wheat.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     lang: ['Ruby on Rails', 'css', 'JavaScript'],
+    githubIcon: './assets/images/gitHubIcon.png', // here
+    liveIcon: './assets/images/liveIcon.svg', // here
     live: '#',
     source: '#',
   },
@@ -52,6 +52,8 @@ const data = [
     src: 'assets/images/wheat.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     lang: ['Ruby on Rails', 'css', 'JavaScript'],
+    githubIcon: './assets/images/gitHubIcon.png', // here
+    liveIcon: './assets/images/liveIcon.svg', // here
     live: '#',
     source: '#',
   },
@@ -61,6 +63,8 @@ const data = [
     src: 'assets/images/wheat.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     lang: ['Ruby on Rails', 'css', 'JavaScript'],
+    githubIcon: './assets/images/gitHubIcon.png', // here
+    liveIcon: './assets/images/liveIcon.svg', // here
     live: '#',
     source: '#',
   },
@@ -70,11 +74,13 @@ const data = [
     src: 'assets/images/wheat.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     lang: ['Ruby on Rails', 'css', 'JavaScript'],
+    technologiesDesktop: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'], // here
+    githubIcon: './assets/images/gitHubIcon.png', // here
+    liveIcon: './assets/images/liveIcon.svg', // here
     live: '#',
     source: '#',
   },
 ];
-
 const retTech = (lang) => {
   let language = '';
   lang.forEach((tech) => {
@@ -82,42 +88,36 @@ const retTech = (lang) => {
   });
   return language;
 };
-
 const popUp = (id) => {
   overLay.style.display = 'flex';
   data.forEach((p) => {
     if (id === p.id) {
       popUpContainer.innerHTML = `
-          <button type="button" id="close-popup-btn">X</button>
-          <img src= ${p.src} alt="wheats.png" class="card-1-img">
-          <div class="card-text cd-txt">
-            <h2 class="title">${p.title}</h2>
-            <ul class="tags tag">
-              ${retTech(p.lang)}
-            </ul>
-            <p class="desc">${p.description}</p>
-            <div class="pop-buttons">
-              <button type="button" class="see-live">
-                See Live
-                <i class="far fa-github"></i>
-              </button>
-              <button type="button" class="see-source">
-                See Source
-                <i class="far fa-github"></i>
-              </button>            
-            </div>
-
-          </div>
-    `;
+      <button type="button" id="close-popup-btn">X</button>
+      <img src= ${p.src} alt="wheats.png" class="card-1-img img-x">
+      <div class="card-text cd-txt">
+        <h2 class="title">${p.title} 
+          <div class="live-source">
+            <button type="button" class="see-live">See Live<img class="button-icon" src="${p.liveIcon}"></button>
+            <button type="button" class="see-source">See Source<img class="button-icon" src="${p.githubIcon}"></button>
+          </div> 
+        </h2>
+        <ul class="tags tag">
+          ${retTech(p.lang)}
+        </ul>
+        <p class="desc">${p.description}</p>
+        <div class="pop-buttons">
+          <button type="button" class="see-live">See Live<img class="button-icon" src="${p.liveIcon}"></button>
+          <button type="button" class="see-source">See Source<img class="button-icon" src="${p.githubIcon}"></button>            
+        </div>
+      </div>`;
     }
   });
   const closeBtn = document.querySelector('#close-popup-btn');
-
   closeBtn.addEventListener('click', () => {
     overLay.style.display = 'none';
   });
 };
-
 const btns = () => {
   btnContainer.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -125,7 +125,6 @@ const btns = () => {
     });
   });
 };
-
 const renderProjects = () => {
   data.forEach((p) => {
     projectContainer.innerHTML += `
@@ -144,7 +143,6 @@ const renderProjects = () => {
     `;
   });
 };
-
 window.onload = () => {
   renderProjects();
   btns();
