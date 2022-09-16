@@ -5,9 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
@@ -148,14 +145,15 @@
 
       <div class="fields">
         <input type="text" class="full-name" placeholder="Full name" maxlength="30" required>
-        <input type="email" placeholder="Email address" class="email" required>
+        <input type="email" id="email" placeholder="Email address" class="email" required>
         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter text here" class="text-area" required maxlength="500"></textarea>
       
         <div class="btn-get-resume" id="git">
-          <button type="submit" class="btn-resume">
+          <button type="submit" class="btn-resume submit-btn" id="submit">
             Get in touch
           </button>
         </div>
+        <small class="err-msg"></small>
       </div>
     </form>
     
@@ -174,5 +172,6 @@
 
   <div class="end" id="end"></div>
   <script src="./js/index.js"></script>
+  <script src="./js/form-validation.js"></script>
 </body>
 </html>

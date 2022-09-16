@@ -147,3 +147,19 @@ window.onload = () => {
   renderProjects();
   btns();
 };
+
+const submitBtn = document.querySelector('#submit');
+const validEmail = (email) => {
+  if (email.match(/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/)) {
+    return true;
+  }
+  return false;
+};
+
+submitBtn.addEventListener('click', (event) => {
+  const validatedEmail = document.getElementById('email').value;
+  if (!validEmail(validatedEmail)) {
+    event.preventDefault();
+    document.querySelector('.err-msg').innerHTML = 'Please type the email in lowercase';
+  }
+});

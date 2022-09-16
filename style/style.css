@@ -599,6 +599,17 @@ h2 {
   border: 1px solid #60c095;
 }
 
+.err-msg {
+  font-family: "Inter", sans-serif !important;
+  color: #d30505;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  align-self: start;
+  margin-left: 10px;
+}
+
 .footer {
   width: 100%;
   height: 189px;
@@ -971,6 +982,17 @@ button {
 
   .cd-txt {
     display: grid;
+  }
+
+  .err-msg {
+    font-family: "Inter", sans-serif !important;
+    color: #d30505;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    align-self: start;
+    margin-left: 10px;
   }
 }
 
