@@ -163,3 +163,28 @@ submitBtn.addEventListener('click', (event) => {
     document.querySelector('.err-msg').innerHTML = 'Please type the email in lowercase';
   }
 });
+
+// Local Storage
+const form2 = document.querySelector('#contact');
+
+form2.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const obj = {
+    fullname: document.querySelector('#name').value,
+    EmailAdress: document.querySelector('#email').value,
+    message: document.querySelector('#textarea').value,
+  };
+
+  localStorage.setItem('DATA', JSON.stringify(obj));
+});
+
+const getData = localStorage.getItem('DATA');
+const getDataValue = JSON.parse(getData);
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem('DATA')) {
+    document.querySelector('#name').value = getDataValue.fullname;
+    document.querySelector('#email').value = getDataValue.EmailAdress;
+    document.querySelector('#textarea').value = getDataValue.message;
+  }
+});
