@@ -5,25 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
 <body>
 
-  <section class="homepage" id="top"> 
-    <header>
-      <div class="nav">
-        <p class="welcome"> <a href="#portfolio">welcome</a> </p>
-        <img src="assets/images/menu-bar.png" alt="Menu" class="menu">
-      </div>
+  <section class="homepage"> 
+    <header><!--here-->
+      <nav>
+        <div class="nav">
+          <p class="welcome"> <a href="#portfolio">welcome</a> </p>
+          <div class="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- <img src="assets/images/menu-bar.png" alt="Menu" class="menu" id="bar">  -->
+          <!-- <img src="assets/images/close-icon.png" alt="Menu" class="menu-2" style="display: none;" id="close">  -->
+          <div class="nav-b hidden-content"> 
+            <ul class="nav-items">
+              <li class="li-1"><a href="#portfolio" class="nvl">Portfolio</a></li>
+              <li class="li-1"><a href="#about" class="nvl">About Me</a></li>
+              <li class="li-1"><a href="#contact" class="nvl">Contact</a></li>
+            </ul>
+          </div>
 
-      <div class="nav-b">
-        <a href="#portfolio" class="nvl">Portfolio</a>
-        <a href="#about" class="nvl">About Me</a>
-        <a href="#contact" class="nvl">Contact Me</a>
-        <!-- <ul class="nav-b-list"> -->
-        <!-- </ul> -->
-      </div>
+          <div class="desktop">
+            <ul class="ul-desktop">
+              <li class=""><a href="#portfolio" class="">Portfolio</a></li>
+              <li class=""><a href="#about" class="">About Me</a></li>
+              <li class=""><a href="#contact" class="">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
     </header>
 
     <h1 class="intro-text">
@@ -33,133 +49,40 @@
       I can help you build a product , feature or website Look through some of my work and experience! <br> If you like what you see and have a project you need coded, <br>
       don't hestiate to contact me.
     </p>
-
     <div class="soc-media">
-      <a href="#"><img src="assets/images/Vector01.png" alt=""></a>
-      <a href="#"><img src="assets/images/Vector02.png" alt=""></a>
-      <a href="#"><img src="assets/images/Vector03.png" alt=""></a>
-      <a href="#"><img src="assets/images/Vector04.png" alt=""></a>
-      <a href="#"><img src="assets/images/vectorM.png" alt=""></a>
+      <a href="#"><img src="assets/images/Vector01.png" alt="Github icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector02.png" alt="Linkedin icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector03.png" alt="Angellist icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector04.png" alt="Twitter icon with profile link"></a>
+      <a href="#"><img src="assets/images/vectorM.png" alt="Medium icon with profile link"></a>
     </div>
-
     <div class="action">
       <button type="button" class="button">
-        <img src="assets/images/action.png" alt="">
+        <img src="assets/images/action.png" alt="Scroll down button">
       </button>
     </div>
     
   </section>
+
+  <section id="popup-window">
+    <div class="popup">
+    </div>
+  </section>
   <!-- Recent work Section-->
   <section class="recent-work" id="portfolio">
 
-    <h1 class="recent-text">
+    <h2 class="recent-text">
       My Recent Works
-    </h1>
+    </h2>
     
-    <div class="indicator">`</div>
+    <div class="indicator"></div>
 
-    <div class="card-container">
-
-      <div class="card-1">
-        <img src="assets/images/wheats.png" alt="pic.png" class="card-1-img">
-        <div class="card-text">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="tags">
-            <li class="on">Ruby on rails</li>
-            <li class="css">css</li>
-            <li class="js">JavaScript</li>
-            <li class="html">html</li>
-          </ul>
-          <button type="button" class="see-project">
-            See Project
-          </button>
-        </div>
-      </div>
-
-      <div class="card-1">
-        <img src="assets/images/wheats.png" alt="pic.png" class="card-1-img">
-        <div class="card-text">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="tags">
-            <li class="on">Ruby on rails</li>
-            <li class="css">css</li>
-            <li class="js">JavaScript</li>
-            <li class="html">html</li>
-          </ul>
-          <button type="button" class="see-project">
-            See Project
-          </button>
-        </div>
-      </div>
-
-      <div class="card-1">
-        <img src="assets/images/wheats.png" alt="pic.png" class="card-1-img">
-        <div class="card-text">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="tags">
-            <li class="on">Ruby on rails</li>
-            <li class="css">css</li>
-            <li class="js">JavaScript</li>
-            <li class="html">html</li>
-          </ul>
-          <button type="button" class="see-project">
-            See Project
-          </button>
-        </div>
-      </div>
-
-      <div class="card-1">
-        <img src="assets/images/wheats.png" alt="pic.png" class="card-1-img">
-        <div class="card-text">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="tags">
-            <li class="on">Ruby on rails</li>
-            <li class="css">css</li>
-            <li class="js">JavaScript</li>
-            <li class="html">html</li>
-          </ul>
-          <button type="button" class="see-project">
-            See Project
-          </button>
-        </div>
-      </div>
-
-      <div class="card-1">
-        <img src="assets/images/wheats.png" alt="pic.png" class="card-1-img">
-        <div class="card-text">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="tags">
-            <li class="on">Ruby on rails</li>
-            <li class="css">css</li>
-            <li class="js">JavaScript</li>
-            <li class="html">html</li>
-          </ul>
-          <button type="button" class="see-project">
-            See Project
-          </button>
-        </div>
-      </div>
-
-      <div class="card-1">
-        <img src="assets/images/wheats.png" alt="pic.png" class="card-1-img">
-        <div class="card-text">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="tags">
-            <li class="on">Ruby on rails</li>
-            <li class="css">css</li>
-            <li class="js">JavaScript</li>
-            <li class="html">html</li>
-          </ul>
-          <button type="button" class="see-project">
-            See Project
-          </button>
-        </div>
-      </div>
+    <div id="card-container" class="card-container">
     </div>
   </section>
     <!-- About-Me-Sectoin -->
   <section class="about-me" id="about">
-    <h1 class="about-primary-text">About me</h1>
+    <h2 class="about-primary-text">About me</h2>
     <p class="about-support-text">
       I can help you build a product , feature or website Look through some of my work and experience! <br> If you like what you see and have a project you need coded, <br>
       don't hestiate to contact me.
@@ -174,9 +97,9 @@
 
       <div class="card-a">
         <div class="ellipse">
-          <img src="assets/images/Icon-Langguage.png" alt="" class="lang-icon">
+          <img src="assets/images/Icon-Langguage.png" alt="Icon used in the placard to visually enhance the box" class="lang-icon">
         </div>
-        <p class="title">Languages</p>
+        <p class="title1">Languages</p>
         <ul class="langs">
           <li class="x">JavaScript</li>
           <li class="x">Ruby</li>
@@ -187,47 +110,50 @@
 
       <div class="card-a">
         <div class="ellipse">
-          <img src="assets/images/icon-framework.png" alt="" class="lang-icon">
+          <img src="assets/images/icon-framework.png" alt="Icon used in the placard to visually enhance the box" class="lang-icon">
         </div>
-        <p class="title">Framewoks</p>
+        <p class="title1">Framewoks</p>
         <ul class="langs">
-          <li class="x">JavaScript</li>
-          <li class="x">Ruby</li>
-          <li class="x">Html</li>
-          <li class="x">css</li>
+          <li class="x">Bootstrap</li>
+          <li class="x">Ruby on rails</li>
+          <li class="x">RSpec</li>
+          <li class="x">Capybara</li>
+          <li class="x">Selenium</li>
         </ul>
       </div>
 
       <div class="card-a">
         <div class="ellipse">
-          <img src="assets/images/icon-skill.png" alt="" class="lang-icon">
+          <img src="assets/images/icon-skill.png" alt="Icon used in the placard to visually enhance the box" class="lang-icon">
         </div>
-        <p class="title">Skills</p>
+        <p class="title1">Skills</p>
         <ul class="langs">
-          <li class="x">JavaScript</li>
-          <li class="x">Ruby</li>
-          <li class="x">Html</li>
-          <li class="x">css</li>
+          <li class="x">Codekit</li>
+          <li class="x">Github</li>
+          <li class="x">Codepen</li>
+          <li class="x">Gitlab</li>
+          <li class="x">Terminal</li>
         </ul>
       </div>
 
     </div>
     
-    <form action="https://formspree.io/f/mjvzkpee" method="post" class="form" id="contact">
-      <h1 class="form-text">
+    <form name="form" action="https://formspree.io/f/mjvzkpee" method="post" class="form" id="contact">
+      <h2 class="form-text">
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-      </h1>
+      </h2>
 
       <div class="fields">
-        <input type="text" class="full-name" placeholder="Full name" maxlength="30" required>
-        <input type="email" placeholder="Email address" class="email" required>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter text here" class="text-area" required maxlength="500"></textarea>
+        <input id="name" type="text" class="full-name" placeholder="Full-name" maxlength="30" required>
+        <input id="email" name="email" type="email" placeholder="Email address" class="email" required>
+        <textarea id="textarea" name="textarea" cols="30" rows="10" placeholder="Enter text here" class="text-area" required maxlength="500"></textarea>
       
         <div class="btn-get-resume" id="git">
-          <button type="submit" class="btn-resume">
+          <button type="submit" class="btn-resume submit-btn" id="submit">
             Get in touch
           </button>
         </div>
+        <small class="err-msg"></small>
       </div>
     </form>
     
@@ -235,13 +161,17 @@
     <!-- Footer Section -->
   <section class="footer" id="footer">
     <div class="soc-media-b">
-      <a href="#"><img src="assets/images/Vector01.png" alt=""></a>
-      <a href="#"><img src="assets/images/Vector02.png" alt=""></a>
-      <a href="#"><img src="assets/images/Vector03.png" alt=""></a>
-      <a href="#"><img src="assets/images/Vector04.png" alt=""></a>
-      <a href="#"><img src="assets/images/vectorM.png" alt=""></a>
+      <a href="#"><img src="assets/images/Vector01.png" alt="Github icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector02.png" alt="Linkedin icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector03.png" alt="Angellist icon with profile link"></a>
+      <a href="#"><img src="assets/images/vector04.png" alt="Twitter icon with profile link"></a>
+      <a href="#"><img src="assets/images/vectorM.png" alt="Medium icon with profile link"></a>
     </div>
     <a href="#" class="emailhere">myemailhere@gmail.com</a>
   </section>
+
+  <div class="end" id="end"></div>
+  <script src="./js/index.js"></script>
+  <script src="./js/form-validation.js"></script>
 </body>
 </html>
