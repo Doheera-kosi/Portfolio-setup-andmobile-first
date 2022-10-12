@@ -15,14 +15,14 @@ document.querySelectorAll('.li-1').forEach((n) => n.addEventListener('click', ()
 const data = [
   {
     id: '1',
-    title: 'Keeping track of',
-    src: 'assets/images/popup-pic.png',
+    title: 'EKCode',
+    src: 'assets/images/ekcode.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     lang: ['Ruby on Rails', 'css', 'JavaScript'],
     githubIcon: './assets/images/gitHubIcon.png', // here
     liveIcon: './assets/images/liveIcon.svg', // here
-    live: '#',
-    source: '#',
+    live: 'https://doheera-kosi.github.io/module1-capstone/',
+    source: 'https://github.com/Doheera-kosi/module1-capstone/tree/f-capstone',
   },
   {
     id: '2',
